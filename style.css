@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-height {
+    height: 100px;
+    justify-content: space-between;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.in-game {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    border: 2px solid black;
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn {
+    width: 150px;
+    background-color: rgb(107, 201, 107);
+    color: white;
+}
+
+.start-btn, .submit-btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: .2s ease;
+}
+
+.start-btn:hover {
+    background-color: rgb(107, 201, 107);
+    color: white;
+    font-size: medium;
+    transform: scale(1.1);
+}
+
+.d-none {
+    display: none;
+}
+
+.after-height {
+    height: 35vh;
+    justify-content: space-around;
+}
+
+.fade-animation {
+    animation: fade 2s ease;
+}
+
+.button-trigger {
+    animation: button-trigger .5s ease-in-out;
+}
+
+.no-animation {
+    animation: none;
+}
+
+.red-color {
+    color: red;
+}
+
+#color {
+    color: black;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button-trigger {
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* End Section */
+.end-container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+}
